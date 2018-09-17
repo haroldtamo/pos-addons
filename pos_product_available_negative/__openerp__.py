@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': 'Restrict out-of-stock POS Orders',
     'version': '1.0.0',
@@ -8,7 +7,10 @@
     'category': 'Point Of Sale',
     "support": "apps@it-projects.info",
     'website': 'https://it-projects.info',
-    'depends': ['pos_pin'],
+    'depends': [
+        'pos_pin',
+        'pos_product_available',
+    ],
     'data': [
         'data.xml',
         'views.xml',

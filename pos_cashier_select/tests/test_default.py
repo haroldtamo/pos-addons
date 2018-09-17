@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import odoo.tests
 from odoo.api import Environment
 
@@ -19,7 +18,7 @@ class TestUi(odoo.tests.HttpCase):
             '/web',
 
             "odoo.__DEBUG__.services['web_tour.tour']"
-            ".run('pos_cashier_select_tour')",
+            ".run('pos_cashier_select_tour', 1000)",
 
             "odoo.__DEBUG__.services['web_tour.tour']"
             ".tours.pos_cashier_select_tour.ready",
